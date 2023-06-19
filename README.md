@@ -1,3 +1,25 @@
+# Not Fit For Purpose
+
+The point of this exercise was to ascertain whether what was suggested in this
+repo:
+
+* https://github.com/igorbrigadir/wiki-docs-submodule
+
+I wanted to see how the workflow worked for myself and my conclusion is that it
+is not a good work flow.
+
+The desired outcome is to be able to have a good review process for updates to
+documentation, but still expose the docs to the GitHub wiki interface for
+lighter editing work.
+
+Using this method of including the GitHub wiki repo as a submodule does not
+appear to be the answer.
+
+For those who wish to experience the workflow for themselves this is how
+I replicated what I found to be somewhat confusing, but also I was just lazy
+and didn't want to read the action script and only learned what it did by
+running it a few times.  
+
 # wiki-docs-sync
 
 The first thing to do, is visit the wiki, and create the Home.md page. Just
@@ -28,4 +50,8 @@ command:
 Or acheive the same thing by doing a `git pull` in the main repo, the cd'ing to
 the /docs dir and running `git pull` again to get the wiki repo changes.
 
- 
+# Mount Submodule Elsewhere
+
+Initially I tired to mount the submodule in the /wiki directory in another repo
+where I was using this and got some unexpected results.  That folder name might
+be special. 
