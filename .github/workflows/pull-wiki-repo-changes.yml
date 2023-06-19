@@ -3,10 +3,12 @@ on: gollum
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      GIT_USER: floydwilde
+      GIT_EMAIL: floyd@nimhq.net
     steps:
     - uses: actions/checkout@v2
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
         submodules: recursive
     - name: Pull wiki changes
       run: |
