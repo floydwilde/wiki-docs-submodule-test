@@ -5,6 +5,8 @@ repo:
 
 * https://github.com/igorbrigadir/wiki-docs-submodule
 
+Was a good idea or not.  TL;DR: It's not.
+
 I wanted to see how the workflow worked for myself and my conclusion is that it
 is not a good work flow.
 
