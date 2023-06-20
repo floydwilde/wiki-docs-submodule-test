@@ -15,12 +15,21 @@ documentation, but still expose the docs to the GitHub wiki interface for
 lighter editing work.
 
 Using this method of including the GitHub wiki repo as a submodule does not
-appear to be the answer.
+appear to be the answer. It has all the drawbacks of the added complexity of
+managin a submodule, w/ none of the benefits of greater visiblity with what is
+happening with the wiki files.  When you navigate to the "docs" folder, you are
+essentially back in the wiki editing interface.  You are still not able to
+create PRs and discuss them in the current Repo.
 
-For those who wish to experience the workflow for themselves this is how
-I replicated what I found to be somewhat confusing, but also I was just lazy
-and didn't want to read the action script and only learned what it did by
-running it a few times.  
+Possibly there is some way to make this more workable, but I think one of these
+solutions will work better for me:
+
+* https://github.com/marketplace/actions/bi-directional-wiki-sync-action
+* https://nimblehq.co/blog/create-github-wiki-pull-request
+* https://github.com/Andrew-Chen-Wang/github-wiki-action
+
+For those who wish to experience the workflow for themselves some notes that
+you may find compliment the "wiki-docs-submodule" repo above:
 
 # wiki-docs-sync
 
